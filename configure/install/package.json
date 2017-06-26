@@ -1,0 +1,24 @@
+{
+  "name": "angular-boilerplate",
+  "version": "1.0.0",
+  "description": "Modern Angular Boilerplate",
+  "config": {
+    "ng1": "angular",
+    "ng2": "angular-cli",
+    "ng4": "@angular/cli"
+  },
+  "scripts": {
+    "clean": "rm -rf ./node_modules",
+    "boilerplate-ng4": "npm run clean && npm i -S @angular/cli && ./node_modules/@angular/cli/bin/ng new .",
+    "boilerplate-ng2": "npm run clean && npm i -S angular-cli",
+    "boilerplate-ng1": "npm run clean && npm i -D npm-add-script && node ./configure/install/ng1.js"
+  },
+  "author": "Mike Clagg",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-add-script": "^1.1.0"
+  },
+  "dependencies": {
+    "@angular/cli": "^1.1.3"
+  }
+}
